@@ -1,0 +1,17 @@
+---
+- name: Descargando el agente
+  ansible.windows.win_get_url:
+    url: "{{ ocs_installer_url }}"
+    dest: "{{ ocs_temp_path }}"
+
+- name: Descomprimiendo el zip
+  community.windows.win_unzip:
+    src: "{{ ocs_temp_path }}"
+    dest: C:\Users\pgraffigna\Downloads\
+    remove: true
+
+- name: Instalando ocs-inventory agent
+  ansible.windows.win_package:
+    path: "{{ ocs_installer_path }}"
+    arguments: /S /NOSPLASH /SERVER=http://SERVER/ocsinventory
+    

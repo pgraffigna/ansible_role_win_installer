@@ -1,0 +1,4 @@
+---
+ocs_installer_url: https://github.com/OCSInventory-NG/WindowsAgent/releases/download/2.10.1.0/OCS-Windows-Agent-2.10.1.0_x64.zip
+ocs_temp_path: C:\Users\pgraffigna\AppData\Local\Temp\OCS-Windows-Agent-2.10.1.0_x64.zip
+ocs_installer_path: C:\Users\pgraffigna\Downloads\OCS-Windows-Agent-2.10.1.0_x64\OCS-Windows-Agent-Setup-x64.exe

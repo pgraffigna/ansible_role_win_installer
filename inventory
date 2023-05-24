@@ -1,0 +1,13 @@
+[windows]
+testing ansible_host=192.168.122.55
+
+[windows:vars]
+ansible_user=usuario
+ansible_password=testing123
+#ansible_ssh_port=22
+ansible_connection=ssh
+ansible_shell_type=cmd
+
+## dependencia
+# ansible-galaxy collection install ansible.windows
+
